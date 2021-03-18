@@ -1,0 +1,23 @@
+{
+  "name": "ws-hw1",
+  "version": "1.0.0",
+  "description": "Automation workshop from Wizeline, homework number 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-safari": "testcafe safari './page_model/test/'",
+    "test-firefox": "testcafe firefox './page_model/test/'",
+    "test-chrome": "testcafe chrome './page_model/test/'",
+    "test-all": "testcafe chrome,safari,firefox './page_model/test/'",
+    "test:report": "testcafe chrome './page_model/test/' --reporter html:reports/html/`date +%Y-%m-%d_%H:%M:%S`/report.html"
+  },
+  "author": "Francisco Sandoval",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "testcafe-reporter-html": "^1.4.6"
+  },
+  "devDependencies": {
+    "testcafe": "^1.12.0"
+  }
+}
